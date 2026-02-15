@@ -4,19 +4,19 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <section className="nav-body">
-      <h1>Navbar</h1>
+      <h1>Zeb Shop</h1>
 
       <div className="nav-links">
-        <Link to="/">
-          <button>Home</button>
+        <Link to="/" className="nav-button">
+          Home
         </Link>
 
-        <Link to="./shop">
-          <button>Shop</button>
+        <Link to="/shop" className="nav-button">
+          Shop
         </Link>
 
-        <Link to="./cart">
-          <button>Cart</button>
+        <Link to="/cart" className="nav-button">
+          Cart
         </Link>
       </div>
     </section>
