@@ -1,12 +1,18 @@
-import { useState } from "react";
+import "./Home.css";
+import homeImage from "../images/home-page-image.jpg";
 
 function Home() {
   return (
-    <>
-      <div>
-        <h1>Home Page</h1>
+    <section className="home-body">
+      <div className="home-text">
+        <h1 className="home-h1">Zeb Shop</h1>
+        <p className="home-p">
+          Welcome to your one stop shop for the best equipment!
+        </p>
       </div>
-    </>
+
+      <img className="home-image" src={homeImage} />
+    </section>
   );
 }
 

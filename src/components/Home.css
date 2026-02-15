@@ -1,0 +1,38 @@
+.home-body {
+  width: 100vw;
+  height: 92.7vh;
+  background-color: rgb(196, 196, 196);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-h1 {
+  font-size: 90px;
+}
+
+.home-p {
+  font-size: 30px;
+}
+
+.home-text,
+.home-image {
+  max-height: 800px;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-image {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow:
+    0 0 10px #a5a5a5,
+    0 0 40px #a5a5a5,
+    0 0 80px #a5a5a5;
+}

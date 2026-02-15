@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-body {
+  width: 100vw;
+  min-height: 70px;
+  color: white;
+  background-color: rgb(0, 0, 124);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
