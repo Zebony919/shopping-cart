@@ -8,7 +8,7 @@ function Shop() {
 
   useEffect(() => {
     const loadImages = async () => {
-      const images = await fetchItemImages("sports-accessories", 15);
+      const images = await fetchItemImages("sports-accessories", 20);
       setItems(images);
     };
 
@@ -20,6 +20,7 @@ function Shop() {
       {items.map((card) => (
         <ItemCard
           key={card.id}
+          id={card.id}
           name={card.title}
           price={card.price}
           alt={card.description}

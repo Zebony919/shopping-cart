@@ -1,30 +1,34 @@
 .card-body {
-  width: 300px;
-  height: 500px;
+  width: 100%;
+  max-width: 240px;
   background-color: white;
   border-radius: 15px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card-image {
   width: 100%;
-  height: 70%;
+  height: 180px;
   object-fit: cover;
+  border-radius: 10px;
 }
-
 .card-info {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
-.card-desc {
-  background-color: rgb(219, 219, 219);
-  display: flex;
+.card-name-price {
+  width: 100%;
+  height: 50%;
 }
 
 .card-quantity {
+  width: 100%;
   font-size: 25px;
   display: flex;
   justify-content: center;
@@ -38,6 +42,7 @@
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 15px;
+  transition: transform 0.3s ease;
 }
 
 .card-minusBtn,
@@ -48,8 +53,12 @@
 
 .card-addBtn {
   width: 100%;
-  height: 40px;
-  align-self: center;
+  padding: 8px 0;
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-minusBtn {
@@ -60,11 +69,8 @@
   background-color: rgb(206, 206, 206);
 }
 
-.card-addBtn {
-  background-color: green;
-}
-
 .card-minusBtn:hover,
-.card-plusBtn:hover {
+.card-plusBtn:hover,
+.card-addBtn:hover {
   transform: scale(1.1);
 }
